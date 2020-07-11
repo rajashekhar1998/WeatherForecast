@@ -37,13 +37,7 @@ public class MainActivity extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //the whole logic of API calling and converting JSON to java objects is done here
-                if(city.getText().toString().trim()!=null) {
-                    weather(city.getText().toString().trim());
-                }else{
-                    weather("delhi");
-                }
-
+                    weather(city.getText().toString().trim()); 
             }
         });
 
